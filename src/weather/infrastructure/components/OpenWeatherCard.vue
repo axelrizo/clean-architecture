@@ -7,7 +7,6 @@ import { WeatherEntity } from "@/weather/domain/weather.entity";
 const weatherRepository = new OpenWeatherMapRepository();
 const weatherUseCase = new WeatherUseCase(weatherRepository);
 const data: Ref<WeatherEntity | null> = ref(null);
-const mockData: Ref<WeatherEntity | null> = ref(null);
 const city = ref("cancun");
 const searchedCity = ref("");
 const fetchWeather = async () => {
